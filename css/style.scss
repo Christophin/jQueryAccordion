@@ -1,0 +1,43 @@
+//transition height at certain speed
+
+.section  {
+  border: 1px solid #3FC6D1;
+
+
+  h3  {
+    background-color: #00C6D6;
+    margin: 0;
+    padding: 0;
+    height: 2rem;
+    z-index: 10;
+    color: white;
+  }
+}
+
+
+#accordion  {
+  margin: 30%;
+}
+
+p  {
+  margin: 0;
+  padding: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all .8s ease .15s;
+  z-index: -10;
+}
+
+
+.shown {
+    opacity:1;
+    height: 155px;
+    padding: 8px;
+    transition: all .8s ease .15s;
+}
+
+
+.section h3:hover  {
+  background-color: #00DAEC;
+}
